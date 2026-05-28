@@ -4,7 +4,7 @@ Olá, esse é o meu portfolio pessoal como desenvolvedor web. Esse é um dos sit
 
 Você pode utilizar esse site como modelo e modificar-lo livrimente.
 
-[Preview do Site]('https://vercel.com/feppelis-projects/my-website')
+[Preview do Site]('https://guestroom-guardian.lovable.app')
 
 ### Tecnologias utilizadas:
 - React
