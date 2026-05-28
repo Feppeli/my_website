@@ -29,6 +29,7 @@ function App() {
         </div>
       )}
 
+      {/* Vídeo de backgorund */}
       <VideoBg videoUrl={videoBg} onVideoLoaded={() => setIsLoading(false)}/>
 
       <section className="absolute top-0 left-0 right-0 z-10 w-screen max-w-[1200px] mx-auto px-5">
