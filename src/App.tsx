@@ -1,3 +1,6 @@
+import { useState } from 'react'
+
+
 import menuButton from './assets/menu.png'
 import hand from './assets/hand.png'
 import ProjectCards from './components/ProjectCards'
@@ -10,10 +13,23 @@ import videoBg from './assets/videos/background3.mp4'
 
 
 function App() {
+
+  const [isLoading, setIsLoading] = useState(true);
   return (
     <section className=' bg-black/60 sm:bg-black/80'>
 
-      <VideoBg videoUrl={videoBg}/>
+      {/* Tela de Loading */}
+      {isLoading && (
+        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-black transition-opacity duration-500">
+          {/* Spinner de carregamento em Tailwind */}
+          <div className="w-12 h-12 border-4 border-t-transparent border-white rounded-full animate-spin"></div>
+          <p className="text-white mt-4 font-medium tracking-widest text-sm animate-pulse">
+            CARREGANDO EXPERIÊNCIA...
+          </p>
+        </div>
+      )}
+
+      <VideoBg videoUrl={videoBg} onVideoLoaded={() => setIsLoading(false)}/>
 
       <section className="absolute top-0 left-0 right-0 z-10 w-screen max-w-[1200px] mx-auto px-5">
         <main className="flex flex-col ">

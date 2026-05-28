@@ -2,9 +2,10 @@ import { useEffect, useRef } from "react";
 
 type video = {
     videoUrl: any
+    onVideoLoaded: () => void;
 }
 
-const VideoBg = ({videoUrl}: video) => {
+const VideoBg = ({videoUrl, onVideoLoaded}: video) => {
 
     const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -21,6 +22,7 @@ const VideoBg = ({videoUrl}: video) => {
             autoPlay  
             muted 
             playsInline 
+            onCanPlayThrough={onVideoLoaded}
             className='fixed top-0 left-0 w-screen h-screen object-cover -z-10'>
                 <source src={videoUrl} type='video/mp4' />
                 Seu navegador não suporta vídeos
