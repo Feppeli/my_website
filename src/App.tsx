@@ -80,7 +80,7 @@ function App() {
           <div className='relative z-10 w-full max-w-[1200px] mx-auto px-5'>
             <h1 className='text-3xl font-bold mb-4 text-center'>Projetos</h1>
             <div className='flex'>
-              <ProjectCards title='RoomsCheck Managger' description='CRM para gerenciamento de hotéis e automação de vendas' imagesrc={RoomsCheckManagerImg} projectAdress='https://preview--guestroom-guardian.lovable.app/dashboard#' technologys='React,Typescript,tailwind,AI,postgres,Java' />
+              <ProjectCards title='RoomsCheck Managger' description='CRM para gerenciamento de hotéis e automação de vendas' imagesrc={RoomsCheckManagerImg} projectAdress='https://preview--guestroom-guardian.lovable.app' technologys='React,Typescript,tailwind,AI,postgres,Java' />
             </div>
           </div>
           
