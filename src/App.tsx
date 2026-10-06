@@ -72,7 +72,7 @@ function App() {
         <div className='relative z-10 w-full max-w-[1200px] mx-auto px-5'>
           <h1 className="text-3xl font-bold mb-4 text-center">Sobre Mim</h1>
           <div className="text-gray-700 dark:text-gray-300 leading-relaxed sm:text-center">
-            <p className=''><ReactTyped startWhenVisible strings={["Desenvolvendo sites e sistemas a mais de 3 anos, com foco em aplicações Web com alta escalabilidade. Atualmente atuando no desenvolvimento do <span>RoomsCheck</span>, software com alta aceitação na região litorânea do estado pernmabucano, além de atuar como Analista de TI na maior empresa de entretenimento e hotelaria do Brasil, fornecendo escalabilidade confiabilidade e agilidade na Conectividade do Empreendimento."]} typeSpeed={3} /></p>
+            <p className=''><ReactTyped startWhenVisible strings={["Desenvolvendo sites e sistemas a mais de 3 anos, com foco em aplicações Web com alta escalabilidade. Atualmente atuando no desenvolvimento do <span>RoomsCheck</span>, software com alta aceitação na região litorânea do estado pernmabucano, além de atuar como Analista de TI na maior empresa de entretenimento e hotelaria do Brasil, fornecendo escalabilidade, confiabilidade e agilidade na Conectividade do Empreendimento."]} typeSpeed={3} /></p>
           </div>
         </div>
       </section>
@@ -80,14 +80,14 @@ function App() {
       <section className='py-12 pt-8 bg-black '>
         <div className='relative z-10 w-full max-w-[1200px] mx-auto px-5'>
           
-          <h1 className='text-3xl font-bold mb-4 text-center'>Projetos</h1>
+          <h1 className='text-3xl font-bold mb-4 md:mb-8 text-center'>Projetos</h1>
 
           <div className='flex items-center justify-center flex-wrap gap-3'>
-            <ProjectCards title='RoomsCheck Managger' description='CRM para gerenciamento de hotéis e automação de vendas em hotéis, pousadas e hostels com agilidade e simplicidade.' imagesrc={RoomsCheckManagerImg} projectAdress='https://preview--guestroom-guardian.lovable.app' technologys='React,Typescript,tailwind,AI,postgres,Java, Spring Boot' />
+            <ProjectCards title='RoomsCheck Manager' description='CRM para gerenciamento de hotéis e automação de vendas em hotéis, pousadas e hostels com agilidade e simplicidade.' imagesrc={RoomsCheckManagerImg} projectAdress='https://preview--guestroom-guardian.lovable.app' technologys='React,Typescript,tailwind,AI,postgres,Java, Spring Boot' />
 
             <ProjectCards title='Sentinela' description='Aplicação que dispara e-mails sempre que um serviço cai, monitorando URLS abertas para controle de aplicações e sustentação de sistemas.' imagesrc={SentinelaImg} projectAdress='https://github.com/Feppeli/Downdetector_validator' technologys='Python 3.9.x' />
 
-            <ProjectCards title='RoomsCheck Managger' description='Aplicação para padronização e criação de mascara de ocorrências em ambientes de CFTV para redução do tempo de resposta do setor.' imagesrc={CftvImg} projectAdress='https://github.com/Feppeli/SpeedCFTV' technologys='React, Typescript, HTML, CSS' />
+            <ProjectCards title='Speed - CFTV' description='Aplicação para padronização e criação de mascara de ocorrências em ambientes de CFTV para redução do tempo de resposta do setor.' imagesrc={CftvImg} projectAdress='https://github.com/Feppeli/SpeedCFTV' technologys='React, Typescript, HTML, CSS' />
 
           </div>
         </div>
