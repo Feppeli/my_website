@@ -9,7 +9,9 @@ import VideoBg from './components/VideoBg'
 
 
 // imagens e videos
-import RoomsCheckManagerImg from './assets/Rooms Check Manager.png'
+import RoomsCheckManagerImg from './assets/Rooms Check Manager.jpg'
+import SentinelaImg from '../src/assets/Gemini_Generated_Image_ki5zxdki5zxdki5z.jpg'
+import CftvImg from '../src/assets/cftv.jpg'
 import videoBg from './assets/videos/background3.mp4'
 
 
@@ -31,7 +33,7 @@ function App() {
       )}
 
       {/* Vídeo de backgorund */}
-      <VideoBg videoUrl={videoBg} onVideoLoaded={() => setIsLoading(false)}/>
+      <VideoBg videoUrl={videoBg} onVideoLoaded={() => setIsLoading(false)} />
 
       <section className="absolute top-0 left-0 right-0 z-10 w-screen max-w-[1200px] mx-auto px-5">
         <main className="flex flex-col ">
@@ -47,7 +49,7 @@ function App() {
             <div className="flex flex-col max-w-xl ">
               <h1 className="text-4xl font-extrabold mb-2 sm:text-8xl lg:text-7xl"><span>Desenvolvedor FullStack</span></h1>
               <p className="text-gray-600 dark:text-gray-400 text-lg sm:text-3xl">
-                <ReactTyped strings={["Desenvolvedor de Software e Analista De Sistemas com mais de 3 anos de experiência no mercado"]} typeSpeed={20}/>
+                <ReactTyped strings={["Desenvolvedor de Software e Analista De Sistemas com mais de 3 anos de experiência no mercado"]} typeSpeed={20} />
               </p>
               <a href="" className="inline-block mt-4 px-4 py-2 bg-white text-black border border-gray-300 rounded-lg text-center font-medium hover:bg-gray-100 transition-colors self-start">
                 Orçamentos
@@ -64,25 +66,32 @@ function App() {
           </header>
           <img src={hand} alt="Mão acenando" className="w-8 animate-shakehand" />
         </main>
-        
+
       </section>
       <section className="py-12 mt-8 bg-black">
         <div className='relative z-10 w-full max-w-[1200px] mx-auto px-5'>
           <h1 className="text-3xl font-bold mb-4 text-center">Sobre Mim</h1>
           <div className="text-gray-700 dark:text-gray-300 leading-relaxed sm:text-center">
-            <p className=''><ReactTyped startWhenVisible strings={["Desenvolvendo sites e sistemas a mais de 3 anos, com foco em aplicações Web com alta escalabilidade. Atualmente atuando no desenvolvimento do <span>RoomsCheck</span>, software com alta aceitação na região litorânea do estado pernmabucano, além de atuar como Analista de TI na maior empresa de entretenimento e hotelaria do Brasil, fornecendo escalabilidade confiabilidade e agilidade na Conectividade do Empreendimento"]} typeSpeed={5}/> </p>
+            <p className=''><ReactTyped startWhenVisible strings={["Desenvolvendo sites e sistemas a mais de 3 anos, com foco em aplicações Web com alta escalabilidade. Atualmente atuando no desenvolvimento do <span>RoomsCheck</span>, software com alta aceitação na região litorânea do estado pernmabucano, além de atuar como Analista de TI na maior empresa de entretenimento e hotelaria do Brasil, fornecendo escalabilidade confiabilidade e agilidade na Conectividade do Empreendimento"]} typeSpeed={7} /></p>
           </div>
         </div>
-        </section>
+      </section>
 
-        <section className='py-12 pt-8 bg-black '>
-          <div className='relative z-10 w-full max-w-[1200px] mx-auto px-5'>
-            <h1 className='text-3xl font-bold mb-4 text-center'>Projetos</h1>
-            <div className='flex'>
-              <ProjectCards title='RoomsCheck Managger' description='CRM para gerenciamento de hotéis e automação de vendas' imagesrc={RoomsCheckManagerImg} projectAdress='https://preview--guestroom-guardian.lovable.app' technologys='React,Typescript,tailwind,AI,postgres,Java' />
-            </div>
+      <section className='py-12 pt-8 bg-black '>
+        <div className='relative z-10 w-full max-w-[1200px] mx-auto px-5'>
+          
+          <h1 className='text-3xl font-bold mb-4 text-center'>Projetos</h1>
+
+          <div className='flex items-center justify-center flex-wrap gap-3'>
+            <ProjectCards title='RoomsCheck Managger' description='CRM para gerenciamento de hotéis e automação de vendas em hotéis, pousadas e hostels com agilidade e simplicidade.' imagesrc={RoomsCheckManagerImg} projectAdress='https://preview--guestroom-guardian.lovable.app' technologys='React,Typescript,tailwind,AI,postgres,Java, Spring Boot' />
+
+            <ProjectCards title='Sentinela' description='Aplicação que dispara e-mails sempre que um serviço cai, monitorando URLS abertas para controle de aplicações e sustentação de sistemas.' imagesrc={SentinelaImg} projectAdress='https://github.com/Feppeli/Downdetector_validator' technologys='Python 3.9.x' />
+
+            <ProjectCards title='RoomsCheck Managger' description='Aplicação para padronização e criação de mascara de ocorrências em ambientes de CFTV para redução do tempo de resposta do setor.' imagesrc={CftvImg} projectAdress='https://github.com/Feppeli/SpeedCFTV' technologys='React, Typescript, HTML, CSS' />
+
           </div>
-        </section>
+        </div>
+      </section>
 
     </section>
 
