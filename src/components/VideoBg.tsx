@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 
 type video = {
-    videoUrl: any
+    videoUrl: string
     onVideoLoaded: () => void;
 }
 
