@@ -72,7 +72,7 @@ function App() {
         <div className='relative z-10 w-full max-w-[1200px] mx-auto px-5'>
           <h1 className="text-3xl font-bold mb-4 text-center">Sobre Mim</h1>
           <div className="text-gray-700 dark:text-gray-300 leading-relaxed sm:text-center">
-            <p className=''><ReactTyped startWhenVisible strings={["Desenvolvendo sites e sistemas a mais de 3 anos, com foco em aplicações Web com alta escalabilidade. Atualmente atuando no desenvolvimento do <span>RoomsCheck</span>, software com alta aceitação na região litorânea do estado pernmabucano, além de atuar como Analista de TI na maior empresa de entretenimento e hotelaria do Brasil, fornecendo escalabilidade confiabilidade e agilidade na Conectividade do Empreendimento"]} typeSpeed={3} /></p>
+            <p className=''><ReactTyped startWhenVisible strings={["Desenvolvendo sites e sistemas a mais de 3 anos, com foco em aplicações Web com alta escalabilidade. Atualmente atuando no desenvolvimento do <span>RoomsCheck</span>, software com alta aceitação na região litorânea do estado pernmabucano, além de atuar como Analista de TI na maior empresa de entretenimento e hotelaria do Brasil, fornecendo escalabilidade confiabilidade e agilidade na Conectividade do Empreendimento."]} typeSpeed={3} /></p>
           </div>
         </div>
       </section>
